@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+  width: 100%;
+  height: 12vh;
+  @media (min-width: 768px) {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(173, 55, 179));
+  }
+  &__link {
+    width: 201px;
+    height: 50px;
+    padding-left: 31px;
+  }
+  &__link__logo {
+    width: 130px;
+    height: 60px;
+    position: relative;
+    bottom: 16%;
+  }
+}

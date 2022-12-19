@@ -1,0 +1,120 @@
+.form__share {
+  border-bottom: rgb(197, 84, 180) 1px solid;
+  margin-right: 19px;
+  margin-left: 20px;
+  margin-top: 10px;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__boxOne {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+  &__title {
+    flex-grow: 1;
+    color: rgb(160, 30, 140);
+    font-family: $font-main;
+    font-size: rem(18);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: rem(7);
+  }
+  &__nodesIcon {
+    padding-right: 12px;
+    font-size: rem(18);
+  }
+  &__boxTwo {
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 30px;
+  }
+  &__btn {
+    background-color: rgb(160, 30, 140);
+    border-radius: 12px;
+    border-style: none;
+    color: #ffffff;
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__btn:disabled {
+    background-color: rgb(169, 144, 165);
+  }
+  &__cardIcon {
+    padding-right: 10px;
+  }
+  @include tablet {
+    margin-left: 40px;
+    margin-right: 30px;
+  }
+}
+.form__collapsible {
+  height: 18vh;
+  border-bottom: #d8d8d8 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(153, 28, 134);
+
+  @media (min-width: 768px) {
+    height: 19vh;
+  }
+
+  &__cardUrl {
+    font-size: rem(12);
+    font-weight: 600;
+    text-align: center;
+    color: rgb(153, 28, 134);
+    @media (min-width: 768px) {
+      font-size: rem(14);
+    }
+
+    &-message {
+      font-size: rem(16);
+      font-weight: bolder;
+      @media (min-width: 768px) {
+        font-size: rem(18);
+      }
+    }
+  }
+
+  &__errorText {
+    font-size: rem(14);
+    font-weight: 600;
+    margin-bottom: rem(5);
+    text-align: center;
+    width: rem(220);
+    line-height: rem(25);
+    @media (min-width: 1084px) {
+      font-size: rem(16);
+    }
+  }
+
+  &__shareBtn {
+    background-color: $twitter-color;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0 30px;
+  }
+}
+.fa-twitter {
+  margin-right: 10px;
+}
+.collapsed {
+  display: none;
+}

@@ -1,0 +1,118 @@
+.preview {
+  background-image: linear-gradient(to right bottom, #dc78b7, #6c54c3);
+  padding-top: 35px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media all and (min-width: 768px) {
+    margin-top: 20px;
+    margin-right: 40px;
+    border-radius: 6px;
+    width: 60vw;
+    padding-top: 15vh;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    border: solid 2px rgb(248, 219, 244);
+    border-radius: 15px;
+    width: 75px;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(251, 240, 251);
+    font-size: rem(12);
+    text-transform: uppercase;
+    padding: 6px 12px 5px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-110%, 0%);
+    cursor: pointer;
+  }
+  &__article {
+    background-color: white;
+    width: 240px;
+    height: 340px;
+    border-radius: 2px;
+    margin-top: 20px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    padding-top: 21px;
+  }
+  &__box1 {
+    font-family: $font-card;
+    line-height: 1.5;
+    padding-left: rem(20);
+
+    &__name {
+      font-size: rem(18);
+      color: $palette1-color1;
+      font-weight: 800;
+    }
+    &__job {
+      font-size: rem(16);
+      color: $subtitle-color;
+      font-weight: 550;
+    }
+  }
+  &__nav {
+    padding: 10px 0px 12px 20px;
+  }
+  &__media {
+    display: flex;
+    gap: 10px;
+
+    &__item {
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__box2 {
+    background-image: url('../../images/default_image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    width: 240px;
+    height: 200px;
+  }
+}
+
+.fa-trash-can {
+  margin-right: 5px;
+}
+
+.palette1-color2 {
+  border-left: 5px solid $palette1-color2;
+}
+.palette2-color2 {
+  border-left: 5px solid $palette2-color2;
+}
+.palette3-color2 {
+  border-left: 5px solid $palette3-color2;
+}
+
+.palette1-color1 {
+  color: $palette1-color1;
+}
+.palette2-color1 {
+  color: $palette2-color1;
+}
+.palette3-color1 {
+  color: $palette3-color1;
+}
+
+.palette1-color3 {
+  border: solid 2px $palette1-color3;
+}
+.palette2-color3 {
+  border: solid 2px $palette2-color3;
+}
+.palette3-color3 {
+  border: solid 2px $palette3-color3;
+}
