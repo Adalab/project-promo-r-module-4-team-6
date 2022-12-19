@@ -25,6 +25,7 @@ function App() {
   );
   const [dataResult, setDataResult] = useState({});
   const [avatar, setAvatar] = useState('');
+  const [showLoading, setShowLoading] = useState(false);
 
   // Collapse
   const [designIsOpen, setDesignIsOpen] = useState(true);
@@ -70,7 +71,9 @@ function App() {
   };
 
   const handleShare = () => {
+    setShowLoading(true);
     callToApi(person).then((data) => {
+      setShowLoading(false);
       setDataResult(data);
     });
   };
@@ -86,10 +89,10 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Landing />} />
+        <Route path="/" element={<Landing />} />
 
         <Route
-          path='/card'
+          path="/card"
           element={
             <Card
               avatar={avatar}
@@ -103,6 +106,7 @@ function App() {
               handleReset={handleReset}
               updateAvatar={updateAvatar}
               handleCollapse={handleCollapse}
+              showLoading={showLoading}
             ></Card>
           }
         />

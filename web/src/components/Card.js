@@ -14,7 +14,7 @@ function Card(props) {
     <>
       <Header />
 
-      <main className='create-main'>
+      <main className="create-main">
         <PreviewCard
           avatar={props.avatar}
           person={props.person}
@@ -22,7 +22,7 @@ function Card(props) {
           updateAvatar={props.updateAvatar}
         ></PreviewCard>
 
-        <form action='' className='form js_form' onSubmit={handleSubmit}>
+        <form action="" className="form js_form" onSubmit={handleSubmit}>
           <Design
             person={props.person}
             designIsOpen={props.designIsOpen}
@@ -43,6 +43,7 @@ function Card(props) {
             shareIsOpen={props.shareIsOpen}
             handleShare={props.handleShare}
             handleCollapse={props.handleCollapse}
+            showLoading={props.showLoading}
           ></Share>
         </form>
       </main>
