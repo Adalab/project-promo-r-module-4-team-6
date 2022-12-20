@@ -1,5 +1,5 @@
 function callToApi(data) {
-  return fetch('https://dev.adalab.es/api/card', {
+  return fetch('//localhost:4000/card', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: { 'content-type': 'application/json' },
@@ -11,3 +11,8 @@ function callToApi(data) {
 }
 
 export default callToApi;
+
+
+
+
+// https://dev.adalab.es/api/card

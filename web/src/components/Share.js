@@ -50,9 +50,7 @@ function Share(props) {
 
   const renderShareError = () => {
     let errorMessage = '';
-    if (props.dataResult.error.includes('ER_DATA_TOO_LONG')) {
-      errorMessage = 'Ups, tu imagen es muy grande. Elige una menor de 50KB 😉';
-    } else if (props.dataResult.error.includes('Mandatory fields')) {
+   if (props.dataResult.error.includes('Mandatory fields')) {
       errorMessage =
         'Asegúrate de rellenar todos los campos y adjuntar una imagen 😉';
     } else {
