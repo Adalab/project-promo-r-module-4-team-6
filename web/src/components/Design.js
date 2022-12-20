@@ -1,3 +1,5 @@
+import '../styles/components/Design.scss';
+
 function Design(props) {
   const handleInput = (ev) => {
     props.handleInput({

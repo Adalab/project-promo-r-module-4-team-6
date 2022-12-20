@@ -1,4 +1,5 @@
 import GetAvatar from './GetAvatar';
+import '../styles/components/Fill.scss';
 
 function Fill(props) {
   const handleInput = (ev) => {

@@ -1,4 +1,5 @@
 import Profile from './Profile';
+import '../styles/components/PreviewCard.scss';
 
 function PreviewCard(props) {
   const handleReset = (ev) => {

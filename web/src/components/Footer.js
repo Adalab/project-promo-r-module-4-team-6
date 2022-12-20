@@ -1,5 +1,5 @@
 import logoFooter from '../images/logo_adalab_purple.png';
-import '../styles/layout/Footer.scss';
+import '../styles/components/Footer.scss';
 
 function Footer() {
   return (

@@ -4,6 +4,8 @@ import Design from './Design';
 import Fill from './Fill';
 import Share from './Share';
 import Footer from './Footer';
+import '../styles/layout/_page.scss';
+import '../styles/layout/_form.scss';
 
 function Card(props) {
   const handleSubmit = (ev) => {

@@ -1,4 +1,6 @@
 import Loader from '../components/Loader';
+import '../styles/components/Share.scss';
+
 function Share(props) {
   const handleShare = (ev) => {
     ev.preventDefault();

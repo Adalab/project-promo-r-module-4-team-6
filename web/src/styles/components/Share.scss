@@ -1,3 +1,7 @@
+@import '../core/mixins';
+@import '../core/variables';
+@import '../core/rems';
+
 .form__share {
   /*  position: relative; */
   border-bottom: rgb(197, 84, 180) 1px solid;

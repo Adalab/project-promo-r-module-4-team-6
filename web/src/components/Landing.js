@@ -1,6 +1,7 @@
 import logoPink from '../images/logo_pink.png';
 import { NavLink } from 'react-router-dom';
-import '../styles/layout/Landing.scss';
+import '../styles/components/Landing.scss';
+
 //Components
 import LandingStars from './LandingStars';
 import Footer from './Footer';
