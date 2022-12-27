@@ -68,6 +68,7 @@ function App() {
     });
     setAvatar('');
     setShareIsOpen(false);
+    setFillIsOpen(false);
     setDesignIsOpen(true);
     ls.clear();
   };
