@@ -12,48 +12,51 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/2eec946f56.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/2eec946f56.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/main.css" />
   </head>
 
-  <body>
+  <body class="body">
+    <div class="stars_landing">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
     <main class="main">
       <article class="preview__article">
         <div class="preview__box1 palette1-color2 js_preview_box1">
-          <p class="preview__box1__name palette1-color1 js_preview_name">
-            <%= name %>
-          </p>
+          <p class="preview__box1__name palette1-color1 js_preview_name"><%= name %></p>
           <p class="preview__box1__job js_preview_job"><%= job %></p>
         </div>
-        <div
-          class="preview__box2 js_preview_picture js_cardPic"
-          style="background-image: url(<%= photo %>)"
-        ></div>
+        <div class="preview__box2 js_preview_picture js_cardPic" style="background-image: url(<%= photo %>)"></div>
         <nav class="preview__nav">
           <ul class="preview__media">
             <li class="preview__media__item palette1-color3 js_media_item">
-              <a
-                href="tel:+34 <%= phone %>"
-                class="preview__media__link js_preview_link"
-                id="phone"
-                ><i
-                  class="palette1-color1 js_card_icon fa-solid fa-mobile-screen-button"
-                ></i
+              <a href="tel:+34 <%= phone %>" class="preview__media__link js_preview_link" id="phone"
+                ><i class="palette1-color1 js_card_icon fa-solid fa-mobile-screen-button"></i
               ></a>
             </li>
             <li class="preview__media__item palette1-color3 js_media_item">
-              <a
-                href="mailto:<%= email %>"
-                target="_blank"
-                rel="noreferrer"
-                class="preview__media__link js_preview_link"
-                id="email"
-                ><i
-                  class="palette1-color1 js_card_icon fa-regular fa-envelope"
-                ></i
+              <a href="mailto:<%= email %>" target="_blank" rel="noreferrer" class="preview__media__link js_preview_link" id="email"
+                ><i class="palette1-color1 js_card_icon fa-regular fa-envelope"></i
               ></a>
             </li>
             <li class="preview__media__item palette1-color3 js_media_item">
@@ -63,9 +66,7 @@
                 rel="noreferrer"
                 class="preview__media__link js_preview_link"
                 id="linkedin"
-                ><i
-                  class="palette1-color1 js_card_icon fa-brands fa-linkedin-in"
-                ></i
+                ><i class="palette1-color1 js_card_icon fa-brands fa-linkedin-in"></i
               ></a>
             </li>
             <li class="preview__media__item palette1-color3 js_media_item">
@@ -75,9 +76,7 @@
                 rel="noreferrer"
                 class="preview__media__link js_preview_link"
                 id="github"
-                ><i
-                  class="palette1-color1 js_card_icon fa-brands fa-github-alt"
-                ></i
+                ><i class="palette1-color1 js_card_icon fa-brands fa-github-alt"></i
               ></a>
             </li>
           </ul>
