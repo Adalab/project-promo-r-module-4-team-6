@@ -44,9 +44,9 @@ server.post('/card', (req, res) => {
       newCard.linkedin,
       newCard.github
     );
-
+    console.log(result);
     const responseSuccess = {
-      cardURL: `https://project-promo-r-module-4-team-6-production.up.railway.app/card/${result.lastInsertRowId}`,
+      cardURL: `https://project-promo-r-module-4-team-6-production.up.railway.app/card/${result.lastInsertRowid}`,
       success: true,
     };
     res.json(responseSuccess);
