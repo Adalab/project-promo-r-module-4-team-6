@@ -32,13 +32,13 @@ server.post('/card', (req, res) => {
   } else {
     const newCard = req.body;
 
-    const insertStmt = db.prepare('INSERT INTO cards (palette, name, job, image, email, phone, linkedin, github) VALUES (?,?,?,?,?,?,?,?)');
+    const insertStmt = db.prepare('INSERT INTO cards (palette, name, job, photo, email, phone, linkedin, github) VALUES (?,?,?,?,?,?,?,?)');
 
     const result = insertStmt.run(
       newCard.palette,
       newCard.name,
       newCard.job,
-      newCard.image,
+      newCard.photo,
       newCard.email,
       newCard.phone,
       newCard.linkedin,
