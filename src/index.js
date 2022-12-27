@@ -9,6 +9,8 @@ server.use(cors());
 server.use(express.json({ limit: '25mb' }));
 server.set('view engine', 'ejs');
 
+console.log(process.env);
+
 // init express aplication
 const serverPort = 4000;
 server.listen(serverPort, () => {
@@ -24,15 +26,7 @@ server.use(express.static(staticServerPath));
 const savedCards = [];
 
 server.post('/card', (req, res) => {
-  if (
-    !req.body.name ||
-    !req.body.job ||
-    !req.body.email ||
-    !req.body.phone ||
-    !req.body.photo ||
-    !req.body.linkedin ||
-    !req.body.github
-  ) {
+  if (!req.body.name || !req.body.job || !req.body.email || !req.body.phone || !req.body.photo || !req.body.linkedin || !req.body.github) {
     // ERROR
     const responseFalse = {
       error: 'Mandatory fields',
