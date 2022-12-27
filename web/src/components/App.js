@@ -67,6 +67,8 @@ function App() {
       photo: '',
     });
     setAvatar('');
+    setShareIsOpen(false);
+    setDesignIsOpen(true);
     ls.clear();
   };
 
@@ -89,10 +91,10 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path='/' element={<Landing />} />
 
         <Route
-          path="/card"
+          path='/card'
           element={
             <Card
               avatar={avatar}
