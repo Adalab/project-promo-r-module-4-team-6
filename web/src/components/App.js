@@ -67,9 +67,7 @@ function App() {
       photo: '',
     });
     setAvatar('');
-    setShareIsOpen(false);
-    setFillIsOpen(false);
-    setDesignIsOpen(true);
+    setDataResult({});
     ls.clear();
   };
 
