@@ -68,6 +68,9 @@ function App() {
     });
     setAvatar('');
     setDataResult({});
+    setDesignIsOpen(true);
+    setFillIsOpen(false);
+    setShareIsOpen(false);
     ls.clear();
   };
 
