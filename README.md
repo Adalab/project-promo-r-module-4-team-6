@@ -27,7 +27,17 @@ It was developed using:
 - **JSX**
 - **Sass**
 
-## Getting Started
+## 2. Awesome Profile Cards Server
+
+In the fourth module our objective was to create a database using SQLite Browser and after to deploy the project on Railway server.
+
+Our goals were:
+• Consolidate the learning of Node JS and Express JS technologies to learn how to listen to requests from browsers.
+• Consolidate SQL learning to work with databases and save user data persistently.
+• Consolidate the learning of API Rest to know how to structure and organize the communications between a browser and a server in an optimal way.
+• To be able to carry out a complete web project, without the need to request help from any other development team.
+• To be able to put a complete project into production: front end + back end.
+• Improve communication between team members and with other development teams.
 
 ## What can you do?
 
@@ -40,5 +50,9 @@ It was developed using:
 - If you regret the image you chose, and want to start again **Reset your data** by clicking on the reset button.
 
 - When you are happy with the result **share it on Twitter**.
+
+## DEMO
+
+![demo](/assets/demo.gif)
 
 ## Cheers!
