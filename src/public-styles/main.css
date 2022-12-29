@@ -206,6 +206,7 @@ table {
   height: 70vh;
   position: absolute;
   bottom: 30%;
+  z-index: -1;
 }
 @media (min-width: 768px) {
   .stars_landing {
