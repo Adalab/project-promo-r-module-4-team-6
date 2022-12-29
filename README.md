@@ -2,7 +2,7 @@
 
 Hi there!
 
-This is a group project created for the React Module of **Adalab's Coding Bootcamp**.
+This is a group project created for the React Module and Node JS module of **Adalab's Coding Bootcamp**.
 
 By clicking on the Github Pages link attached above in the description, you can check out our page!
 
@@ -40,6 +40,14 @@ Our goals were:
 - To be able to carry out a complete web project, without the need to request help from any other development team.
 - To be able to put a complete project into production: front end + back end.
 - Improve communication between team members and with other development teams.
+
+It was developed using:
+
+- **Node JS**
+- **SQLite**
+- **Express JS**
+- **EJS**
+- **Railway**
 
 ## What can you do?
 
