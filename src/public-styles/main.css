@@ -153,6 +153,10 @@ table {
   height: 32px;
   justify-content: center;
   width: 32px;
+  cursor: pointer;
+}
+.preview__media__link {
+  cursor: pointer;
 }
 .preview__box2 {
   background-image: url(../../static/media/default_image.6e3e508697ea2132e880.jpg);
@@ -192,19 +196,16 @@ table {
   border: 2px solid #a0c0cf;
 }
 
-
 .main__list {
   padding-left: 2rem;
   padding-bottom: 20px;
 }
 
-
-
 .stars_landing {
   width: 100%;
   height: 70vh;
   position: absolute;
-  bottom: 30%;  
+  bottom: 30%;
 }
 @media (min-width: 768px) {
   .stars_landing {
